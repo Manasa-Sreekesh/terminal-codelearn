@@ -70,8 +70,8 @@ class TerminalUser
 		count = 0
 		@check_data.read
 		loop_count = 0
-		until @status == "complete" or loop_count > 4
-			sleep 1
+		until @status == "complete" or loop_count > 800  #After 4seconds loop_count will be 800
+			sleep 0.005
 			loop_count = loop_count + 1
 			puts "inside loop"
 		end

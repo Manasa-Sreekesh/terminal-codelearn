@@ -384,7 +384,7 @@ module Session
                     #iodat[:yield].call buf  if block_given?
                   #end
                 #end
-		sleep 1
+		#sleep 1
               end
 
               true
