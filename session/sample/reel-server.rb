@@ -4,9 +4,10 @@ require 'stringio'
 require 'json'
 require 'cgi'
 require 'moped'
+require '../lib/method_profiler'
 require '../lib/code_profiler'
 # require "ruby-prof"
-
+require 'method_profiler'
 
 ANSI_COLOR_CODE = {
 	0 => 'black',
@@ -160,7 +161,8 @@ class TerminalUser
 end
 
 class MyServer < Reel::Server
-   def initialize(host = DEFAULT_HOST, port = REEL_SERVER_PORT)
+   def initialize(host = DEFAULT_HOST, port = REEL_SERVER_PORT) 
+	$profiler = MethodProfiler.observe(TerminalUser)
    	 super(host, port, &method(:on_connection))
 	 $users = Hash.new
   end
@@ -168,16 +170,22 @@ class MyServer < Reel::Server
   def on_connection(connection)
   	start_time = Time.now
   	while request = connection.request
+	command = request.url.split("/").last
       case request
       when Reel::Request
+=begin
       	if CodeProfiler::profile_logger_enabled?
 	      	CodeProfiler::profile_logger("handle_request", start_time, request.url) do
 	       	 	handle_request(request)
 	    	end
-	    else
+=end
+	if MethodProfilerForCode::profile_logger_enabled?
+		MethodProfilerForCode::profile_logger("handle_request",request.url,TerminalUser,$profiler,command) do
+			handle_request(request)
+		end
+	else
 	    	handle_request(request)
-	    end
-   		
+	end	
       when Reel::WebSocket
         handle_websocket(request)
       end

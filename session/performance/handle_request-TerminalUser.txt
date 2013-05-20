@@ -1,0 +1,121 @@
+Request_url: /vikas/0/execute/ command_executed: execute
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+-------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time  | Total Calls |
++---------------------------+-------------+-------------+--------------+-------------+-------------+
+| #respond                  | 5001.179 ms | 5001.179 ms | 5001.179 ms  | 5001.179 ms | 1           |
+| #block_for_output_to_come | 5000.871 ms | 5000.871 ms | 5000.871 ms  | 5000.871 ms | 1           |
+| #initialize               | 10.012 ms   | 10.012 ms   | 10.012 ms    | 10.012 ms   | 1           |
+| #execute                  | 0.332 ms    | 0.332 ms    | 0.332 ms     | 0.332 ms    | 1           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.030 ms    | 0.030 ms     | 0.030 ms    | 1           |
++---------------------------+-------------+-------------+--------------+-------------+-------------+
+Request_url: /vikas/1/execute/ command_executed: execute
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| #respond                  | 5001.153 ms | 5001.179 ms | 5001.166 ms  | 10002.332 ms | 2           |
+| #block_for_output_to_come | 5000.791 ms | 5000.871 ms | 5000.831 ms  | 10001.662 ms | 2           |
+| #initialize               | 7.291 ms    | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.332 ms    | 0.359 ms    | 0.345 ms     | 0.691 ms     | 2           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.038 ms    | 0.034 ms     | 0.068 ms     | 2           |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/0/get command_executed: get
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| #respond                  | 5001.153 ms | 5001.516 ms | 5001.283 ms  | 15003.848 ms | 3           |
+| #block_for_output_to_come | 5000.791 ms | 5001.033 ms | 5000.898 ms  | 15002.695 ms | 3           |
+| #initialize               | 7.291 ms    | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.332 ms    | 0.359 ms    | 0.345 ms     | 0.691 ms     | 2           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.106 ms    | 0.058 ms     | 0.174 ms     | 3           |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/0/execute/v1ka5yal1ga6 command_executed: v1ka5yal1ga6
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| #respond                  | 2000.783 ms | 5001.516 ms | 4251.158 ms  | 17004.631 ms | 4           |
+| #block_for_output_to_come | 2000.404 ms | 5001.033 ms | 4250.775 ms  | 17003.099 ms | 4           |
+| #initialize               | 7.291 ms    | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms    | 0.359 ms    | 0.323 ms     | 0.969 ms     | 3           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.106 ms    | 0.058 ms     | 0.231 ms     | 4           |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/1/get command_executed: get
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| #respond                  | 2000.783 ms | 5001.516 ms | 4401.218 ms  | 22006.091 ms | 5           |
+| #block_for_output_to_come | 2000.404 ms | 5001.033 ms | 4400.818 ms  | 22004.089 ms | 5           |
+| #initialize               | 7.291 ms    | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms    | 0.359 ms    | 0.323 ms     | 0.969 ms     | 3           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.120 ms    | 0.070 ms     | 0.351 ms     | 5           |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/1/execute/v1ka5yal1ga6 command_executed: v1ka5yal1ga6
+MethodProfiler results for: TerminalUser
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+| #respond                  | 2000.783 ms | 5001.516 ms | 4001.152 ms  | 24006.914 ms | 6           |
+| #block_for_output_to_come | 2000.404 ms | 5001.033 ms | 4000.752 ms  | 24004.512 ms | 6           |
+| #initialize               | 7.291 ms    | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms    | 0.359 ms    | 0.330 ms     | 1.320 ms     | 4           |
+| #sanitize_ansi_data       | 0.030 ms    | 0.120 ms    | 0.071 ms     | 0.428 ms     | 6           |
++---------------------------+-------------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/0/get command_executed: get
+MethodProfiler results for: TerminalUser
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| #respond                  | 0.252 ms | 5001.516 ms | 3429.595 ms  | 24007.166 ms | 7           |
+| #block_for_output_to_come | 0.018 ms | 5001.033 ms | 3429.219 ms  | 24004.530 ms | 7           |
+| #initialize               | 7.291 ms | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms | 0.359 ms    | 0.330 ms     | 1.320 ms     | 4           |
+| #sanitize_ansi_data       | 0.030 ms | 0.120 ms    | 0.068 ms     | 0.476 ms     | 7           |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/1/get command_executed: get
+MethodProfiler results for: TerminalUser
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| #respond                  | 0.252 ms | 5001.516 ms | 3000.931 ms  | 24007.451 ms | 8           |
+| #block_for_output_to_come | 0.016 ms | 5001.033 ms | 3000.568 ms  | 24004.546 ms | 8           |
+| #initialize               | 7.291 ms | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms | 0.359 ms    | 0.330 ms     | 1.320 ms     | 4           |
+| #sanitize_ansi_data       | 0.020 ms | 0.120 ms    | 0.062 ms     | 0.496 ms     | 8           |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/0/execute/ls command_executed: ls
+MethodProfiler results for: TerminalUser
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| #respond                  | 0.252 ms | 5001.516 ms | 2889.801 ms  | 26008.212 ms | 9           |
+| #block_for_output_to_come | 0.016 ms | 5001.033 ms | 2889.438 ms  | 26004.942 ms | 9           |
+| #initialize               | 7.291 ms | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.278 ms | 0.414 ms    | 0.347 ms     | 1.734 ms     | 5           |
+| #sanitize_ansi_data       | 0.020 ms | 0.120 ms    | 0.063 ms     | 0.567 ms     | 9           |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/0/execute/cd+..%2F command_executed: cd+..%2F
+MethodProfiler results for: TerminalUser
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| #respond                  | 0.252 ms | 5001.516 ms | 2700.881 ms  | 27008.810 ms | 10          |
+| #block_for_output_to_come | 0.016 ms | 5001.033 ms | 2700.519 ms  | 27005.194 ms | 10          |
+| #initialize               | 7.291 ms | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.241 ms | 0.414 ms    | 0.329 ms     | 1.975 ms     | 6           |
+| #sanitize_ansi_data       | 0.020 ms | 0.120 ms    | 0.059 ms     | 0.593 ms     | 10          |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+Request_url: /vikas/1/execute/who command_executed: who
+MethodProfiler results for: TerminalUser
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| Method                    | Min Time | Max Time    | Average Time | Total Time   | Total Calls |
++---------------------------+----------+-------------+--------------+--------------+-------------+
+| #respond                  | 0.252 ms | 5001.516 ms | 2637.230 ms  | 29009.530 ms | 11          |
+| #block_for_output_to_come | 0.016 ms | 5001.033 ms | 2636.873 ms  | 29005.605 ms | 11          |
+| #initialize               | 7.291 ms | 10.012 ms   | 8.651 ms     | 17.303 ms    | 2           |
+| #execute                  | 0.232 ms | 0.414 ms    | 0.315 ms     | 2.207 ms     | 7           |
+| #sanitize_ansi_data       | 0.020 ms | 0.120 ms    | 0.056 ms     | 0.618 ms     | 11          |
++---------------------------+----------+-------------+--------------+--------------+-------------+
