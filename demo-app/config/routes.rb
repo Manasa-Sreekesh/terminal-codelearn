@@ -1,7 +1,9 @@
 TerminalCodelearn::Application.routes.draw do
 	
   root :to => "terminals#index" 
-
+if MethodProfilerForRails::profiler_enabled?
+  match "profile" => "profilers#log"
+end
   match "terminals/:terminal_id/get" => "terminals#get"
 
   match "terminals/:terminal_id/execute" => "terminals#execute"

@@ -7,7 +7,9 @@ require 'moped'
 require '../lib/method_profiler'
 require '../lib/code_profiler'
 # require "ruby-prof"
-require 'method_profiler'
+#require 'method_profiler'
+
+
 
 ANSI_COLOR_CODE = {
 	0 => 'black',
@@ -162,7 +164,6 @@ end
 
 class MyServer < Reel::Server
    def initialize(host = DEFAULT_HOST, port = REEL_SERVER_PORT) 
-	$profiler = MethodProfiler.observe(TerminalUser)
    	 super(host, port, &method(:on_connection))
 	 $users = Hash.new
   end
@@ -180,7 +181,7 @@ class MyServer < Reel::Server
 	    	end
 =end
 	if MethodProfilerForCode::profile_logger_enabled?
-		MethodProfilerForCode::profile_logger("handle_request",request.url,TerminalUser,$profiler,command) do
+		MethodProfilerForCode::profile_logger("handle_request",request.url,command) do
 			handle_request(request)
 		end
 	else
@@ -292,6 +293,11 @@ class MyServer < Reel::Server
     # profile_result = RubyProf.stop # end profiling
 	# print_profile_logs(profile_result,"reel_server_profiler", "MyServer -> handle_websocket")
   end
+end
+
+if MethodProfilerForCode::profile_logger_enabled?
+  profile_classes=[TerminalUser,Session::AbstractSession,MyServer]
+  MethodProfilerForCode::start_profile profile_classes
 end
 
 begin

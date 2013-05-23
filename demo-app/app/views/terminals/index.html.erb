@@ -35,7 +35,7 @@
 			<div class="span6">
 				<form id="myForm" class="form-inline" action="/terminals/1/execute">
 					<input type="text" class="input-large" style="width:70%" name="command" placeholder="Enter Command" autocomplete="off">
-					<button type="submit" class="btn btn-primary">Go</button>
+					<button type="submit" class="btn btn-primary" >Go</button>
 				</form>
 			</div>
 			<div class="span6">
@@ -65,7 +65,9 @@
 function CodelearnTerminal(_id,_number) {
 	
 	var id = _id
-
+	<% if MethodProfilerForRails::profiler_enabled? %>
+		var start_time,end_time,command;
+	<% end %>
 	var objDiv = document.getElementById(id).getElementsByTagName('pre')[0];
 	var removeFirstOutputLine = false
 
@@ -76,14 +78,28 @@ function CodelearnTerminal(_id,_number) {
 	this.setup = function() {
 		
 		getElement('#myForm').ajaxForm({
-			beforeSubmit: function() {
+			beforeSubmit: function() 
+			{
+				<% if MethodProfilerForRails::profiler_enabled? %>
+					start_time = new Date().getTime() / 1000;
+					command = getElement("input[name='command']").val();
+				<% end %>
 				getElement("#loading-img").show()
-				getElement("#output").append(getElement("input[name='command']").val())
+				getElement("#output").append(getElement("input[name='command']").val())	
 				getElement("input[name='command']").val('');
 				removeFirstOutputLine = true
 				//_setTimeout(function(){ poll(fetchData) }, 1000)
 			}
-			, success: function(data) {  fetchData(data)  }
+			, success: function(data) {  fetchData(data) 
+				<% if MethodProfilerForRails::profiler_enabled? %>
+					end_time = new Date().getTime() / 1000;
+					var theUrl = "/profile?time="+String(end_time-start_time)+"&command="+command;
+					var xmlHttp = null;
+				        xmlHttp = new XMLHttpRequest();
+					xmlHttp.open( "GET", theUrl, false );
+					xmlHttp.send( null );
+				<% end %>
+			}
 			,complete: function() { 
 				getElement("input[name='command']").focus(); 
 			}

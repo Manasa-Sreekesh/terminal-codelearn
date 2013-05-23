@@ -1,0 +1,78 @@
+Time taken to make total-request: 2.55400013923645 for thi command: v1ka5yal1ga6
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #execute          | 2026.918 ms | 5043.304 ms | 4035.864 ms  | 12107.592 ms | 3           |
+| #get              | 20.886 ms   | 5021.794 ms | 3354.045 ms  | 10062.134 ms | 3           |
+| #current_user     | 16.174 ms   | 21.231 ms   | 18.704 ms    | 112.223 ms   | 6           |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.037 ms    | 0.021 ms     | 0.149 ms     | 7           |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+Time taken to make total-request: 2.5260000228881836 for thi command: v1ka5yal1ga6
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #get              | 20.886 ms   | 5024.381 ms | 3021.764 ms  | 15108.818 ms | 5           |
+| #execute          | 2025.452 ms | 5043.304 ms | 3533.261 ms  | 14133.044 ms | 4           |
+| #current_user     | 16.174 ms   | 21.231 ms   | 19.177 ms    | 172.591 ms   | 9           |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.040 ms    | 0.022 ms     | 0.219 ms     | 10          |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+Time taken to make total-request: 2.9679999351501465 for thi command: ls
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #execute          | 2023.508 ms | 5043.304 ms | 3231.310 ms  | 16156.552 ms | 5           |
+| #get              | 20.886 ms   | 5024.381 ms | 3021.764 ms  | 15108.818 ms | 5           |
+| #current_user     | 16.174 ms   | 21.231 ms   | 19.099 ms    | 190.987 ms   | 10          |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.040 ms    | 0.021 ms     | 0.234 ms     | 11          |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+Time taken to make total-request: 1.9670000076293945 for thi command: cd ../
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #execute          | 1025.011 ms | 5043.304 ms | 2863.594 ms  | 17181.563 ms | 6           |
+| #get              | 20.886 ms   | 5024.381 ms | 3021.764 ms  | 15108.818 ms | 5           |
+| #current_user     | 16.174 ms   | 21.231 ms   | 19.195 ms    | 211.150 ms   | 11          |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.040 ms    | 0.021 ms     | 0.255 ms     | 12          |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+Time taken to make total-request: 3.116000175476074 for thi command: whoami
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #execute          | 1025.011 ms | 5043.304 ms | 2744.971 ms  | 19214.799 ms | 7           |
+| #get              | 20.886 ms   | 5024.381 ms | 3021.764 ms  | 15108.818 ms | 5           |
+| #current_user     | 16.174 ms   | 27.939 ms   | 19.924 ms    | 239.089 ms   | 12          |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.040 ms    | 0.021 ms     | 0.270 ms     | 13          |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+Time taken to make total-request: 3.1110000610351562 for thi command: who
+MethodProfiler results for: TerminalsController
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| Method            | Min Time    | Max Time    | Average Time | Total Time   | Total Calls |
++-------------------+-------------+-------------+--------------+--------------+-------------+
+| #execute          | 1025.011 ms | 5043.304 ms | 2654.995 ms  | 21239.961 ms | 8           |
+| #get              | 20.886 ms   | 5024.381 ms | 3021.764 ms  | 15108.818 ms | 5           |
+| #current_user     | 16.174 ms   | 27.939 ms   | 19.926 ms    | 259.040 ms   | 13          |
+| #_layout          | 1.215 ms    | 1.215 ms    | 1.215 ms     | 1.215 ms     | 1           |
+| .middleware_stack | 0.012 ms    | 0.040 ms    | 0.020 ms     | 0.285 ms     | 14          |
+| ._helpers         | 0.019 ms    | 0.019 ms    | 0.019 ms     | 0.019 ms     | 1           |
+| #index            | 0.014 ms    | 0.014 ms    | 0.014 ms     | 0.014 ms     | 1           |
++-------------------+-------------+-------------+--------------+--------------+-------------+
